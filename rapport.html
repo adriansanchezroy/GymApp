@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://benomaro.com/ift2255/devoir1.html -->
+<html
+  class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
+  style="">
+<!--<![endif]-->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IFT 2255 - Été 2021 - Équipe 4</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <link rel="stylesheet" href="./rapport_files/normalize.css">
+  <link rel="stylesheet" href="./rapport_files/main.css">
+  <script async="" src="./rapport_files/analytics.js"></script>
+  <script async="" src="./rapport_files/analytics(1).js"></script>
+  <script src="./rapport_files/modernizr-2.js"></script>
+
+  <link rel="stylesheet" href="./rapport_files/uj.css">
+  <script type="application/javascript" src="./rapport_files/main.js"></script>
+  <style></style>
+</head>
+
+<body style="">
+  <!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">
+    upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div id="main" style="width: 95%;">
+    <div id="header">
+    </div>
+    <div id="title">
+      IFT 2255 - Été 2021<br>
+      <h1>Devoir maison 3 </h1> <br /> Équipe 4
+    </div>
+    <div id="content">
+      <div class="box">
+        <h1>Participants</h1>
+        <p>
+        <ul>
+          <li>Louis Tremblay Thibault, louis.tremblay.thibault@umontreal.ca, ####6791, ~20-21h de travail</li>
+          <li>Adrian Sanchez Roy, adriansanchezroy@gmail.com, ####9885, ~20-21h de travail</li>
+          <li>Hugo Carrier, hugo.carrier@umontreal.ca, ####7563, ~20-21h de travail</li>
+        </ul>
+        </p>
+        <h1>Tâches</h1>
+
+        <h2><a href="Exigence/glossaire.txt" target="_blank">Glossaire</a></h2>
+        <ul>
+          <li><b>Centre sportif</b> : regroupement d'installations utilisées pour pratiquer des sports variés
+          </li>
+          <li><b>Salle d'entraînement</b> : salle comprenant divers équipements et machines d'entraînement
+          </li>
+          <li><b>Salle multisport</b> : salle de gymnase avec plusieurs marquages au sol permettant de
+            pratiquer plusieurs sports nécessitant un terrain</li>
+          <li><b>Membre</b> : adhérent au centre sportif ; détient un numéro d'identification unique</li>
+          <li><b>Agent</b> : employé du centre sportif ; utilisateur du système informatisé</li>
+          <li><b>Séance</b> : événement à date fixe de sport ou rendez-vous avec un professionnel</li>
+          <li><b>Professionnel</b> : professionnel de santé/bien-être qui anime les séances</li>
+          <li><b>Service</b> : catégorie de séances qu'offrira aux membres un professionnel dans le centre
+            sportif </li>
+          <li><b>Séance</b> : occurrence d’un service qui a lieu à une certaine, un certain jour avec une capacité
+            maximale.</li>
+          <li><b>Centre de données</b> : système central de gestion informatisée du centre sportif</li>
+          <li><b>Informations personnelles</b> : informations fournies par les clients lors de l’adhésion au #GYM</li>
+          <li><b>Requête</b> : demande effectuée au système afin d’obtenir certaines informations.</li>
+          <li><b>Code de service</b> : un numéro à sept chiffres qui correspond à un service fourni par #GYM.</li>
+          <li><b>Confirmation de présence</b> : action qu’effectue le membre pour indiquer que le service a été rendu en
+            avance.</li>
+          <li><b>Numéro de membre</b> : un numéro à neuf chiffres unique qui identifie chaque membre.</li>
+          <li><b>Numéro de professionnel </b> : un nombre de neuf chiffres attribué à chaque professionnel.</li>
+          <li><b>Client</b> : membre ou professionnel.</li>
+          <li><b>Répertoire des services</b> : base de données de tous les services offerts et leur séances.</li>
+          <li><b>TEF</b> : transfert électronique de fond.</li>
+          <li><b>Procédure comptable :</b> procédure s'effectuant chaque vendredis à minuit qui créent des fichiers TEF
+            et un rapport de synthèse.</li>
+          <li><b>Rapport de synthèse</b> : rapport envoyé au gérant concernant des comptes payables et informations
+            reliées aux professionnels à être payés, créé hebdomadairement ou sur demande.</li>
+          <li><b>Gérant</b> : le gérant du #Gym.</li>
+          <li><b>RnB</b> : organisation tierce qui s'occupe des services comptables.</li>
+
+
+        </ul>
+        <h2><a href="Cas_Utilisation_diagram/Cas_Utilisation.vpp" target="_blank">Diagramme de cas
+            d'utilisation UML</a></h2>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_cas_utilisation.jpg" alt="Diagramme de cas d'utilisation" width="70%"
+            height="70%">
+        </div>
+
+
+        <!-- Cas d'utilisation-->
+        <h2>Cas d'utilisation</h2>
+        <!-- Cas d'utilisation 1 -->
+        <pre style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 1:</span> un client ou un professionnel adhère au centre sportif.
+    <span style="font-weight: bold;">But :</span> Inscrire le client pour qu’il devienne membre de #Gym ou pour inscrire le professionnel au #Gym.
+    <span style="font-weight: bold;">Préconditions :</span> client/professionnel se présente à la réception du centre, un agent est disponible pour l’inscrire et le centre de données est actif.
+    <span style="font-weight: bold;">Acteurs :</span> client (principal), agent (secondaire), professionnel(principal).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Un client se présente à la réception du centre sportif.
+      1.1. Le client informe l’agent qu’il souhaite devenir membre de #Gym.
+    2. L’agent demande au client ses informations personnelles.
+    3. Le client fournit à l’agent ses informations personnelles.
+    4. L’agent entre les informations personnelles du client dans le Centre de données.
+    5. L’agent soumet une requête au centre de données d’enregistrer les informations personnelles du client.
+    6. Le centre de données traite la requête en vérifiant la complétude des informations données.
+    7. Les informations données sont enregistrées dans le centre de données.
+    8. Le centre de données crée le nouveau membre.
+      8.1 Le centre de données assigne automatiquement un numéro unique au nouveau membre.
+    9. L’agent informe le nouveau membre que son adhésion est complète.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    1a. Un professionnel se présente à la réception du centre.
+    1a.1. Retour à l’étape 1.1 du scénario principal en remplaçant les termes client et membre par professionnel.
+    7a.1. Le centre de données établit que les informations données sont incomplètes ou invalides.
+    7a.2. Le centre de données affiche le message « <i>Incomplet</i> » sur l’écran de l’agent.
+    7a.3. L’agent redemande les informations personnelles au client ou au professionnel, le cas échéant.
+    7a.4  Retour à l’étape 3 du scénario principal en remplaçant les termes client et membre par professionnel si l’agent traite l’adhésion d’un professionnel.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données a enregistré les informations personnelles du nouveau membre ou du professionnel et est disponible
+    pour inscrire le prochain client/professionnel.</pre>
+
+        <!-- Cas d'utilisation 2 -->
+        <pre
+          style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 2:</span> un membre souhaite accéder au centre sportif.
+    <span style="font-weight: bold;">But :</span> gérer l’accès des membres au #Gym.
+    <span style="font-weight: bold;">Préconditions :</span> le membre se présente à la réception du centre et un agent est disponible pour lui donner accès.
+    <span style="font-weight: bold;">Acteurs :</span> membre (principal), agent (secondaire).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Le membre se présente à la réception du centre sportif.
+    2. L’agent lui demande son numéro de membre.
+    3. Le membre donne son numéro de membre à l’agent.
+    4. L’agent rentre le numéro donné dans le centre de données.
+    5. L'agent envoie une requête au centre de données de vérifier le numéro de membre.
+    6. Le centre de données traite la requête.
+      6.1 Le centre de données établit que le numéro du membre est valide.
+      6.2 Le centre de données affiche le mot « <i>Validé</i> » sur l’écran de l’agent une fois la vérification effectuée.
+    7. L'agent informe le membre que son accès est valide.
+    8. L’agent ouvre le tourniquet pour permettre au membre d'accéder au centre sportif.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    7a.   Le centre de données établit que le numéro du membre est invalide.
+    7a.1. Le centre de données imprime la raison « <i>Numéro invalide</i> » sur l’écran de l’agent.
+    7a.2. L’agent redemande le numéro au membre;
+    7a.3. Retour à l’étape 3 du scénario principal.
+    7b.   Le centre de données établit que le numéro du membre est invalide.
+    7b.1. Le centre de données imprime la raison « <i>Numéro invalide</i> » sur l’écran de l’agent.
+    7b.2. L’agent redemande le numéro au membre;
+    7b.3. Le membre affirme qu'il n'est pas en fait inscrit au #Gym et qu'il souhaite s'inscrire.
+    7b.3. Retour à l’étape 2 du scénario principal du cas d'utilisation 1.
+    6c.   Le centre de données établit que le membre est suspendu.
+    6c.1. Le centre de données imprime la raison « Membre suspendu » sur l’écran de l’agent.
+    6c.2. L'agent avise le membre que des frais sont dus.
+    6c.3. L’agent refuse l’accès du membre suspendu au centre sportif.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données est prêt à valider l’accès du prochain membre.</pre>
+
+
+        <!-- Cas d'utilisation 3 -->
+        <pre
+          style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 3:</span> un membre s’inscrit à une séance.
+    <span style="font-weight: bold;">But :</span> Inscrire le membre à une séance afin qu’il puisse participer à un cours de sport ou obtenir tout autre service d’un professionnel.
+    <span style="font-weight: bold;">Préconditions :</span> le membre se présente à la réception du centre et un agent est disponible pour l’inscrire.
+    <span style="font-weight: bold;">Acteurs :</span> membre (principal), agent (secondaire), client(secondaire).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Le membre se présente à la réception du centre sportif.
+      1.1 Le membre avise l’agent qu’il souhaite s’inscrire à une séance.
+    2. L’agent lui demande son numéro de membre.
+    3. Le membre donne son numéro de membre à l’agent.
+    4. L’agent rentre le numéro donné dans le centre de données.
+    5. L'agent envoie une requête au centre de données de confirmer le numéro fourni.
+    6. Le centre de données confirme que le numéro fourni est valide.
+      6.1. Le centre de données imprime le mot « <i>Numéro Valide</i> » sur l'écran de l'agent une fois la validation effectuée.
+    7. L’agent aide le membre à consulter l’ensemble des services offerts et les séances disponibles pour le jour même dans le répertoire des services.
+    8. Le membre sélectionne une séance.
+      8.1 Le membre confirme son inscription à la séance.
+    9. Le centre de données crée un enregistrement avec les informations requises sur le disque :
+    À chaque fois qu’une inscription de séance est effectuée, les informations suivantes doivent être enregistrées par le centre de données :
+    Date et heures actuelles
+    Date à laquelle le service sera fourni
+    Numéro du professionnel
+    Numéro du membre
+    Code du service
+    Commentaires (facultatifs)
+    10. Le centre de données affiche le montant à payer sur l'écran de l'agent.
+    11. L'agent avise le membre du montant dû.
+    12. Le membre paie le montant demandé.
+    13. L’agent avise le membre que son inscription est complète.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    2a.   Aucun service ou séance n’est disponible pour le jour même.
+    2a.1. L’agent en informe le membre et lui avise de retourner le lendemain.
+    2a.2. Retour à l’étape 1 scénario principal.
+    3a.   Le membre avise l'agent qu'il n'a pas de numéro de membre.
+    3a.1. L'agent demande au client s'il souhaite s'inscrire.
+    3a.2. Le client avise l'agent qu'il veut adhérer au #Gym.
+    3a.3. Retour à l'étape 2 du scénario principal du cas d'utilisation 1.
+    6a.   Le centre données confirme que le numéro donné est invalide.
+    6a.1. Le centre de données imprime le message « <i>Numéro Invalide</i> » sur l'écran de l'agent une fois la validation effectuée.
+    6a.2. L'agent redemande au membre son numéro.
+    6a.3. Retour à l'étape 3 du scénario principal.
+    8a.   Le membre informe l'agent qu'il souhaite annuler la demande d'inscription.
+    8a.1. L'agent annule la demande d'inscription.
+      8a.1.1. L'agent sélectionne « <i>Annuler</i> » dans le centre de données.
+      8a.1.2. Le centre de données annule la demande d'inscription.
+      8a.1.3. Le centre de données affiche le message « <i>Demande Annulée</i> » sur l'écran de l'agent.
+    8a.2. L'agent informe le membre que sa demande d'inscription a été cancelée.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données a créé un enregistrement de l'inscription et est disponible pour inscrire le prochain membre à une séance.</pre>
+
+        <!-- Cas d'utilisation 4 -->
+        <pre
+          style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 4:</span> un professionnel souhaite fournir un service chez #Gym.
+    <span style="font-weight: bold;">But :</span> ajouter/modifier/supprimer un service d’un professionnel.
+    <span style="font-weight: bold;">Préconditions :</span> le professionnel se présente à la réception du centre et un agent est disponible pour l’assister.
+    <span style="font-weight: bold;">Acteurs :</span> professionnel (principal), agent (secondaire).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Le professionnel se présente à la réception du centre.
+    2. Le professionnel avise l’agent qu’il souhaite fournir un service chez #Gym.
+    3. L’agent demande au professionnel son numéro de professionnel.
+    4. Le professionnel fournit à l’agent son numéro de professionnel.
+    5. L’agent envoie une requête au centre de données pour obtenir l’enregistrement du professionnel.
+      5.1 Le centre de données traite la requête et affiche à l’écran de l'agent les informations du professionnel.
+    6. L’agent confirme au professionnel qu’il est dans le centre de données et lui demande les horaires des différentes séances auxquelles aura lieu le service.
+    7. Le professionnel indique à l’agent les horaires des différentes séances auxquelles aura lieu le service.
+    8. L’agent demande les informations nécessaires au professionnel :
+    Pour chaque ajout de service, les informations suivantes sont requises :
+    Date et heures actuelles
+    Date de début de service
+    Date et heures des séances
+    Récurrence hebdomadaire de la séance
+    Capacité maximale
+    Numéro du professionnel
+    Code du service
+    Commentaires(facultatif)
+    9. Le professionnel fournit les informations demandées à l’agent.
+    10. L'agent envoie une requête au centre de données d'enregistrer ces informations.
+    11. Le centre de données vérifie si toutes les informations nécessaires ont été fournies.
+      11.1 Une fois toutes les informations saisies, un numéro de service est généré par le centre de données.
+    12. Un enregistrement des informations nécessaires est créé par le centre de données :
+    Pour chaque enregistrement, les informations décrites à l’étape 8 sont enregistrées par le centre de données.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    2a.    Le professionnel avise l'agent qu'il souhaite modifier un service qu'il fournit.
+    2a.1.  L'agent demande au professionnel son numéro de professionnel.
+    2a.2.  Le professionnel fournit son numéro à l'agent.
+    2a.3.  L’agent envoie une requête au centre de données pour obtenir l’enregistrement du professionnel.
+    2a.4.  L’agent demande professionnel son le code de service afférent.
+    2a.5.  Le professionnel fournit le code de service.
+    2a.6.  L’agent envoie une requête au centre de données pour trouver le service..
+      2a.6.1. Le centre de données traite la requête et affiche le service en question sur l'écran de l'agent.
+    2a.7.  L'agent demande au professionnel ce qu'il souhaite modifier au service.
+    2a.8.  Le professionnel informe l'agent des modifications.
+    2a.9.  L'agent envoie une requête de modification au centre de données.
+    2a.10. Le centre de données traite la requête et affiche le message « <i>Modification complétée</i> » sur l'écran de l'agent.
+    2a.11. L'agent confirme au professionnel que son service a été modifié.
+    2b.    Le professionnel avise l'agent qu'il souhaite supprimer un service qu'il fournit.
+    2b.1.  L'agent demande au professionnel son numéro de professionnel.
+    2b.2.  Le professionnel fournit son numéro à l'agent.
+    2b.3.  L’agent envoie une requête au centre de données pour obtenir l’enregistrement du professionnel.
+    2b.4.  L’agent demande professionnel son le code de service afférent.
+    2b.5.  Le professionnel fournit le code de service.
+    2b.6.  L’agent envoie une requête au centre de données pour trouver le service.
+      2b.6.1. Le centre de données traite la requête et affiche le service en question sur l'écran de l'agent.
+    2b.7   L'agent sélectionne « <i>Supprimer Service</i> ».
+    2b.8.  Le centre de données affiche le message « <i>Confirmer suppression de service</i> ».
+    2b.9.  L'agent demande au professionnel de confirmer la suppression du service.
+    2b.10. Le professionnel confirme la suppression.
+    2b.11. L'agent sélectionne « <i>Confirmer</i> ».
+    2b.12. Le centre de données traite la requête et supprime le service.
+      2b.12.1. Le centre de données affiche le message « <i>Service supprimé</i> » sur l'écran de l'agent.
+    2b.13  L'agent avise le professionnel que son service a été supprimé.
+    4a     Le professionnel informe l'agent qu'il n'est pas inscrit au centre sportif.
+    4a.1.  L’agent demande au professionnel ses informations personnelles.
+    4a.2.  L’agent envoie une requête au centre de données d'enregistrer les informations fournies.
+    4a.3.  Le centre de données vérifie la complétude des informations données.
+      4a.3.1 Une fois la vérification confirmée, le centre de données imprime le mot « <i>Complet</i> » sur l'écran de l'agent.
+    4a.4.  Les informations données sont enregistrées dans le centre de données.
+      4a.4.1 Le centre de données assigne automatiquement un numéro unique au nouveau professionnel.
+      4a.4.2 Le centre de données crée un enregistrement du nouveau professionnel.
+    4a.5. Retour à l’étape 6 du scénario principal.
+    12a.  Les informations fournies par le professionnel sont incomplètes ou invalides.
+    12a.1 Le centre de données affiche le message « <i>Invalide</i> » sur l'écran de l'agent.
+    12a.2 L'agent redemande les informations au professionnel.
+    12a.3 Retour à l'étape 9 du scénario principal.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données a enregistré le service proposé par le professionnel et est disponible pour ajouter le service du prochain professionnel.</pre>
+
+        <!-- Cas d'utilisation 5 -->
+        <pre
+          style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 5:</span> professionnel consulte les inscriptions à ses séances.
+    <span style="font-weight: bold;">But :</span> permettre au professionnel de consulter les inscriptions à ses séances.
+    <span style="font-weight: bold;">Préconditions :</span> le professionnel se présente à la réception du centre et un agent est disponible pour l’assister.
+    <span style="font-weight: bold;">Acteurs :</span> professionnel (principal), agent (secondaire).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Le professionnel se présente à la réception du centre.
+      1.1. Le professionnel avise l’agent qu’il souhaite consulter les inscriptions à sa séance.
+    2. L’agent demande au professionnel son numéro de professionnel.
+    3. Le professionnel fournit son numéro à l'agent.
+    4. L'agent demande au professionnel la date et l’heure de la séance.
+    5. Le professionnel fournit la date et l’heure de la séance à l’agent.
+    6. L'agent entre ces informations dans le centre de données.
+    7. L’agent envoie une requête au centre de données d'afficher les informations de la séance demandée.
+    8. Le centre de données valide que la séance existe.
+    9. Le centre de données envoie les inscriptions de la séance demandée.
+      9.1. Ces inscriptions sont affichées sur l’écran de l’agent.
+    10. L’agent avise le professionnel des inscriptions à sa séance.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    9a. La requête au centre de données est invalide.
+    9a.1. Le centre de données affiche le mot « <i>Requête invalide</i> » sur l'écran de l'agent.
+    9a.2. L'agent avise le professionnel que l'information fournie est erronnée.
+    9a.3. L’agent redemande au professionnel la date et l’heure de la séance.
+    9a.4. Retour à l’étape 5 du scénario principal.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données est disponible pour permettre la consultation du prochain professionnel.</pre>
+
+        <!-- Cas d'utilisation 6 -->
+        <pre
+          style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 6:</span> un membre confirme sa présence à une séance.
+    <span style="font-weight: bold;">But :</span> confirmer qu’un membre sera bel et bien présent à une séance et de s’assurer que seulement les membres inscrits puissent y assister.
+    <span style="font-weight: bold;">Préconditions :</span> le membre se présente à la réception du centre et un agent est disponible pour l’assister.
+    <span style="font-weight: bold;">Acteurs :</span> membre (principal), agent (secondaire).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Le membre se présente à la réception du centre.
+      1.1. Le membre avise l’agent qu’il souhaite confirmer sa présence à une séance.
+    2. L'agent utilise le répertoire des services pour rechercher le code de service approprié.
+    3. L'agent rentre le code de service dans le centre de données.
+    4. Une requête est envoyée au centre de données.
+      4.1. Le centre de données valide le code de service donné.
+      4.2. Le centre de données affiche les séances correspondant au service.
+    5. L'agent sélectionne la séance approprié.
+     5.1. Une requête est envoyée au centre de données d'afficher toute l'information nécessaire.
+     5.2. Le centre de données affiche l'information sur l'écran de l'agent.
+    6. L'agent sélectionne « <i>Confirmer inscriptions</i> »
+    7. L’agent demande au membre son numéro de membre unique afin de valider son inscription à la séance sélectionnée.
+    8. Le membre fournit son numéro à l'agent.
+    9. L’agent entre le code du membre.
+    10. Une requête est envoyée au centre de données.
+      10.1. Le centre de données vérifie si l’inscription est valide.
+      10.2. Une fois l’inscription vérifiée, le centre de données imprime le mot « <i>Validé</i> » sur l’écran de l’agent.
+      10.3. Le centre de données enregistre la confirmation du service fourni sur le disque:
+      Pour chaque confirmation de service fourni, les informations suivantes sont enregistrés sur le disque:
+      Date et heure actuelles
+      Numéro du professionnel
+      Numéro du membre
+      Code du service
+      Commentaires (facultatif)
+    11. L’agent avise le membre que son accès à la séance a été confirmée.
+    12. Le membre peut participer à sa séance.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    4a.    Le code de service donné est erroné.
+    4a.1.  Le centre de donnée affiche le message « <i>Code de service invalide</i> » sur l'écran de l'agent.
+    4a.2.  L'agent informe le membre que son code de service est invalide.
+    4a.3.  L’agent redemande le code de service au membre .
+    4a.2.  Retour à l’étape 3 du scénario principal.
+    8a.    Le membre affirme qu'il ne possède pas de numéro de membre.
+    8a.1.  L'agent avertit qu'une inscription au #Gym est nécessaire et demande au client s'il souhaite s'inscrire.
+    8a.2.  Le client informe l'agent qu'il souhaite adhérer au #Gym.
+    8a.3.  Retour à l'étape 2 du scénario principal du cas d'utilisation 1.
+    10a.   Le numéro de membre est invalide.
+    10a.1. Le centre de donnée affiche le message « <i>Invalide</i> » sur l'écran de l'agent.
+    10a.2. L'agent informe le membre que son numéro est invalide.
+    10a.3. L’agent redemande au membre son numéro.
+    10a.4. Retour à l'étape 7 du scénario principal.
+    10b.   Le numéro de membre est invalide.
+    10b.1. Le centre de donnée affiche le message « <i>Invalide</i> » sur l'écran de l'agent.
+    10b.2. L'agent informe le membre que son numéro est invalide.
+    10b.3. L’agent redemande au membre son numéro.
+    10b.4. Le membre redonne le même numéro à l'agent.
+    10b.5. L'agent informe le membre qu'il ne pourra pas assister à la séance et de bien vouloir s'inscrire à l'avance pour la prochaine fois.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données est disponible pour permettre la confirmation de présence du prochain membre.</pre>
+
+        <!-- Cas d'utilisation 7 -->
+        <pre
+          style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 7:</span> un membre demande une modification de son profil de membre.
+    <span style="font-weight: bold;">But :</span> modifier ou supprimer un membre.
+    <span style="font-weight: bold;">Préconditions :</span> le membre se présente à la réception du centre et un agent est disponible pour l’assister.
+    <span style="font-weight: bold;">Acteurs :</span> membre (principal), agent (secondaire).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Le membre se présente à la réception du centre.
+      1.1. Le membre avise l’agent qu’il souhaite modifier son profil de membre.
+    2. L'agent demande au membre son numéro unique.
+    3. Le membre fournit son numéro à l’agent.
+    4. L'agent rentre le numéro du membre dans le centre de données.
+    5. L'agent envoie une requête au centre de données d'afficher le profil du membre.
+      5.1. Le centre de données valide le numéro de membre fourni.
+      5.2. Le centre de données affiche le profil du membre sur l'écran de l'agent.
+    6. L’agent demande au membre le type de modification voulue.
+    7. Le membre avise l'agent qu'il souhaite modifier son profil de membre.
+    8. L'agent demande au membre les informations qu'il souhaite mettre à jour.
+    9. Le membre fournit les informations demandées à l'agent.
+    10. L'agent envoie une requête au centre de données d’enregistrer les informations modifiées.
+    11. Le centre de données vérifie la complétude des informations modifiées.
+    12. Les informations modifiées sont enregistrées dans le centre de données.
+      12.1 Le centre de données affiche le message « <i>Modification complétée</i> » sur l'écran de l'agent.
+    13. L'agent avise le membre que les modifications ont été effectuées.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    5a.   Le centre de données affiche le le message « <i>Numéro invalide</i> » sur l'écran de l'agent.
+    5a.1. L'agent informe le membre que son numéro est invalide.
+    5a.2. L’agent redemande au membre son numéro.
+    5a.3. Retour à l'étape 3 du scénario principal.
+    7a.   Le membre avise l'agent qu'il souhaite supprimer son adhésion.
+    7a.1. L'agent envoie une requête au centre de données de supprimer l'adhésion du membre.
+    7a.2. Le centre de données affiche le message « <i>Confirmer la suppression</i> » sur l'écran de l'agent.
+    7a.3. L'agent demande au membre de confirmer sa demande de suppression.
+    7a.4. Le membre confirme sa demande.
+    7a.5. L'agent selectionne « <i>Confirmer</i> ».
+    7a.6. Le centre de données supprime le profil du membre.
+    7a.7. Le centre de données affiche le message « <i>Membre supprimé</i> » sur l'écran de l'agent.
+    7a.8. L'agent confirme au ex-membre que son adhésion a été supprimée.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données est disponible pour traiter la demande de modification du prochain membre.</pre>
+
+        <!-- Cas d'utilisation 8 -->
+        <pre
+          style="font-family: &#39;Open Sans&#39;, sans-serif;">    <span style="font-weight: bold;">Cas d'utilisation 8:</span> procédure comptable.
+    <span style="font-weight: bold;">But :</span> générer des enregistrements sur le disque sous la forme de données de TEF.
+    <span style="font-weight: bold;">Préconditions :</span> le centre de données est actif.
+    <span style="font-weight: bold;">Acteurs :</span> gérant (principal).
+    <span style="font-weight: bold;">Scénario principal :</span>
+    1. Il est minuit un vendredi soir.
+    2. Une requête est envoyé au centre de données d'initier la procédure comptable.
+    3. La procédure comptable génère des enregistrements sur le disque sous forme de TEF avec les informations suivantes.
+       Pour chaque procédure comptable, les informations suivantes sont enregistrés sur le disque pour chaque professionnel:
+       Nom du professionnel
+       Numéro du professionnel
+       Montant à transférer au professionnel pour ses services de la semaine.
+    4. La procédure comptable lit le fichier des services fournis de la semaine.
+    5. La procédure comptable produit un rapport de synthèse.
+       Pour chaque rapport de synthèse, les informations suivantes doivent y figurer:
+       Comptes payables
+       Liste des professionels qui doivent être payés cette semaine
+       Nombre de services octroyé par chaque professionnel
+       Nombre total des professionnels ayant fourni des services pour la semaine
+       Nombre total hebdomadaire des services octroyés
+       Total hebdomadaire des frais de professionnel
+    6. La procédure comptable envoie le rapport au gérant.
+    <span style="font-weight: bold;">Scénarios alternatifs :</span>
+    1a.  Le gérant fait une demande individuelle de rapport de synthèse.
+    1a.1 Retour à l'étape 4 du scénario principal.
+    <span style="font-weight: bold;">Postconditions :</span> le centre de données est disponible pour traiter la prochaine procédure comptable et/ou demande de rapport de synthèse.</pre>
+
+        <h2>Diagramme d'activité UML</h2>
+        <h3><a href="diagram_activite_principal/Principale.vpp" target="_blank">Diagramme d'activité principale</a>
+        </h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_act_principale.jpg" alt="Diagramme d'activité principale"
+            height="70%" width="70%">
+        </div>
+
+        <h3><a href="diagram_acitivite_modifier_supprimerMembre/Modifier_Supprimer_Membre.vpp" target="_blank">Diagramme
+            d'activité modifier ou supprimer un membre</a></h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_act_modifier_supprimer_membre.jpg"
+            alt="Diagramme d'activité modifier ou supprimer un membre" height="70%" width="60%">
+        </div>
+
+        <h3><a href="diagram_activite_confirmation/confirmationSeance.vpp" target="_blank">Diagramme d'activité
+            confirmation de présence à une séance</a></h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_act_confirmation.jpg"
+            alt="Diagramme d'activité confirmation de présence à une séance" height="70%" width="50%">
+        </div>
+
+        <h3><a href="diagram_activite_inscription/inscription.vpp" target="_blank">Diagramme d'activité inscription
+            à une séance</a></h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_act_inscription.jpg"
+            alt="Diagramme d'activité inscription à une séance" height="70%" width="50%">
+        </div>
+
+        <h3><a href="diagram_activite_service/modifier_ajouer_supprimer_services.vpp" target="_blank">Diagramme
+            d'activité modifier, ajouter ou supprimer un service</a></h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_act_ajouter_modifier_supprimer_service.jpg"
+            alt="Diagramme d'activité modifier, ajouter ou supprimer un service" height="70%" width="50%">
+        </div>
+
+        <h3><a href="diagram_activite_inscription/inscription.vpp" target="_blank">Diagramme d'activité inscription
+            membre ou professionnel</a></h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_act_inscription.jpg"
+            alt="Diagramme d'activité inscription membre ou professionnel" height="70%" width="50%">
+        </div>
+
+        <h2>Diagramme de classes</h2>
+        <h3><a href="diagramme_de_classes/diagramme_de_classes.vpp" target="_blank">Diagramme de classes</a>
+        </h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_classes.jpg" alt="Diagramme de classes" height="70%" width="70%">
+        </div>
+
+        <h2>Diagrammes de séquence</h2>
+        <h3><a href="diagramme_sequence_ajout_membre/diagramme sequence ajout_membre.vpp" target="_blank">Diagramme de
+            séquence ajout d'un membre</a>
+        </h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_seq_ajout_membre.jpg" alt="Diagramme de séquence ajout d'un membre"
+            height="70%" width="70%">
+        </div>
+
+        <h3><a href="diagramme_sequence_modifier_membre/diagramme sequence modifier membre.vpp"
+            target="_blank">Diagramme de séquence modification et suppression d'un membre</a>
+        </h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_seq_mod_suppr_membre.jpg"
+            alt="Diagramme de séquence modification et suppression d'un membre" height="70%" width="70%">
+        </div>
+
+        <h3><a href="diagramme_sequence_ajout_modif_service/diagramme sequence ajout_modification service.vpp"
+            target="_blank">Diagramme de séquence ajout et modification d'un service</a>
+        </h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_seq_ajout_mod_service.jpg"
+            alt="Diagramme de séquence ajout et modification d'un service" height="70%" width="70%">
+        </div>
+
+        <h3><a href="diagramme_sequence_confirmation/seq_confirmation.vpp" target="_blank">Diagramme de séquence
+            d'inscription et de confirmation d'inscription</a>
+        </h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_seq_confirmation.jpg"
+            alt="Diagramme de séquence de confirmation d'inscription" height="70%" width="70%">
+        </div>
+
+        <h3><a href="diagramme_sequence_proc_comptable/seq_procedure_comptable.vpp" target="_blank">Diagramme de
+            séquence de procédure comptable</a>
+        </h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/diagramme_seq_proc_comptable.jpg"
+            alt="Diagramme de séquence de procédure comptable" height="70%" width="70%">
+        </div>
+
+        <br />
+
+        <h2>Tests</h2>
+        <h3>Test sur les usagers</h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/test_1.png" alt="Test sur les usagers" height="70%" width="70%">
+        </div>
+
+        <h3>Tests sur les services</h3>
+        <div class="diagramme">
+          <img src="rapport_files/images/test_2.png" alt="Test sur les services" height="70%" width="70%">
+        </div>
+        <br />
+
+        <h2>Documentation</h2>
+        <h3><a href="code/docs/JavaDocs/index.html" target=_blank>JavaDoc</a></h3>
+        <h3><a href="code/docs/manuel_utilisateur.pdf" target=_blank>Manuel d'utilisateur</a></h3>
+
+        <br />
+
+        <h1>Distribution des tâches et collaboration</h1>
+        Il est important de mentionner que nous avons eux plusieurs appels et que le pourcentage explique le travail
+        écrit, mais chacun a participé à la création d'idées.
+        <table style="width:100%">
+          <tr>
+            <th>Section</th>
+            <th>Hugo</th>
+            <th>Louis</th>
+            <th>Adrian</th>
+          </tr>
+          <tr>
+            <td>Mise à jour des artéfacts</td>
+            <td>33%</td>
+            <td>33%</td>
+            <td>33%</td>
+          </tr>
+          <tr>
+            <td>Code du programme</td>
+            <td>33%</td>
+            <td>33%</td>
+            <td>33%</td>
+          </tr>
+          <tr>
+            <td>Tests unitaires JUnit</td>
+            <td>33%</td>
+            <td>33%</td>
+            <td>33%</td>
+          </tr>
+          <tr>
+            <td>Manuel utilisateur</td>
+            <td>33%</td>
+            <td>33%</td>
+            <td>33%</td>
+          </tr>
+          <tr>
+            <td>JavaDocs</td>
+            <td>33%</td>
+            <td>33%</td>
+            <td>33%</td>
+          </tr>
+        </table>
+
+        <h2>Historique des commits</h2>
+        <div class="diagramme">
+          <img src="rapport_files/images/commits_screenshot_1.png" alt="Historique des commits" height="400px">
+          <img src="rapport_files/images/commits_screenshot_2.png" alt="Historique des commits" height="400px">
+          <img src="rapport_files/images/commits_screenshot_3.png" alt="Historique des commits" height="400px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./rapport_files/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="./rapport_files/plugins.js"></script>
+  <script src="./rapport_files/main(1).js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-52916909-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  </div>
+
+  <script src="./rapport_files/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="./rapport_files/plugins.js"></script>
+  <script src="./rapport_files/main(1).js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-52916909-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  </div>
+</body>
+
+</html>

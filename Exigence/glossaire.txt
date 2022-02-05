@@ -1,0 +1,9 @@
+Centre sportif : regroupement d'installations utilisées pour pratiquer des sports variés
+Salle d'entraînement : salle comprenant divers équipements et machines d'entraînement
+Salle multisport : salle de gymnase avec plusieurs marquages au sol permettant de pratiquer plusieurs sports nécessitant un terrain
+Membre : adhérent au centre sportif ; détient un numéro d'identification unique
+Agent : employé du centre sportif ; utilisateur du système informatisé
+Séance : événement à date fixe de sport ou rendez-vous avec un professionnel
+Professionnel : professionnel de santé/bien-être qui anime les séances
+Service : catégorie de séance qu'offrira aux membres un professionnel dans le centre sportif 
+Centre de données : système central de gestion informatisée du centre sportif

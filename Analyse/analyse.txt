@@ -1,0 +1,8 @@
+Les parties informatisées seront les suivantes :
+
+le Centre de Données ;
+la liste des membres ;
+le Répertoire des Services ;
+la liste des enregistrements d'inscriptions confirmées aux séances ;
+la liste des enregistrements des services fournis.
+Toutes ces informations seront stockées en format JSON dans des fichiers qui se trouveront le disque dur de l'ordinateur qui exécute la console Java. Un seul ordinateur est nécessaire et suffisant pour le bon fonctionnement du système informatisé. L'interface entre le système et l'utilisateur (l'agent) sera une console Java, les agents utiliseront donc le clavier et l'écran pour naviguer et utiliser le système. Les membres n'interagiront pas directement avec le système informatisé ; ce sera toujours par l'entreprise d'un agent.

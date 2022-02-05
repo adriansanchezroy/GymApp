@@ -1,0 +1,9 @@
+Risques sévères
+	Pertes des données contenues dans le Centre de données dû à une corruption de l'information et/ou d'une mauvaise gestion des copies de sauvegardes. Une telle perte entraînerait une coupure de service complète du système.
+Risques importants
+	Besoin éventuel d'un système d'optimisation d'horaire pour les séances offertes par les professionnels.
+	Déclin des performances dû à la taille de la clientèle et à une gestion des données peu efficace.
+Risques éloignés
+	Un professionnel non-membre pourrait avoir accès à la salle d'entraînement.
+	Un membre non-professionnel pourrait pouvoir ajouter des séances.
+	Ces deux risques découlent de la superposition des permissions associées aux rôles. On peut éviter ces risques en faisant attention de bien définir chaque rôle et les implémenter strictement.

@@ -1,0 +1,5 @@
+L'interface utilisateur doit être une console Java. Le langage de programmation utilisé sera donc Java.
+Aucun système tiers de gestion de base de données ne sera utilisé dans le projet. Les informations à sauvegarder le seront donc dans un type de fichier à définir (sérialisation, JSON, CSV, etc).
+En supposant que l'établissement ne sera pas ouvert en permanence, la disponibilité du système informatisé n'aura pas à être particulièrement grande en dehors des heures d'ouverture. Il sera donc possible de faire des mises à jour à froid s'il le faut.
+Le temps de réponse doit être raisonnable pour que les membres et professionnels ne trouvent pas que le système informatisé est inconvénienent. Il faudra donc gérer les données de manière à ce que les temps de requête aux données soient plus ou moins constants peu importe le nombre d'inscriptions au centre sportif.
+Aucune interface graphique sera nécessaire.
